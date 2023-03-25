@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Index</title>
+    </head>
+    <body>
+        <form align="center" method="get">
+            <h1>Enter Details</h1>
+            <label>Enter name:</label>
+            <input type="text" id="name">
+        <br><br>
+        <label>Enter email:</label>
+            <input type="text" id="email">
+<br><br>
+            <label>Enter phone number:</label>
+            <input type="text" id="phno">
+
+                <br><br>
+                <input type="button" value="Submit" onclick="check(true)">
+        </form>
+
+        <script>
+            function check(){
+                if(true){
+                    alert("Creating usert for the first time")
+                }
+                else{
+                    alert("Again checking user if exists!!")
+                    check();
+                }
+                flag =false;
+
+            }
+        </script>
+    </body>
+</html>
